@@ -1,0 +1,8 @@
+node{
+     stage('SCM checkout'){
+      git 'https://github.com/bachennu/maven-examples/java-web-project'
+     }
+     stage('compile'){
+     sh 'mvn package'
+     }
+}
